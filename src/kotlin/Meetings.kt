@@ -1,6 +1,8 @@
 package com.target
 
 class Meeting{
+    internal val logger = Logger()
+
     fun addParticipant(name: String) {
         if verifyParticipant(name)
             println("Added: $name")
@@ -9,4 +11,5 @@ class Meeting{
         println("try to verify")
         return true
     }
+    protected fun verifyMeeting(){}
 }

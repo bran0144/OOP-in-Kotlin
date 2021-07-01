@@ -6,4 +6,6 @@ fun main() {
     println("Creating: $meeting")
 
     meeting.addParticpant("Katie")
+
+    meeting.logger
 }
