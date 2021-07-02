@@ -5,7 +5,11 @@ fun main() {
 
     println("Creating: $meeting")
 
-    meeting.addParticpant("Katie")
+    val participant = Participant()
+    participant.name = "Katie"
+    participant.email = "katie@gmail.com"
+    meeting.addParticipant(participant)
+//    meeting.meetingName = "Review"
 
     meeting.logger
 }
