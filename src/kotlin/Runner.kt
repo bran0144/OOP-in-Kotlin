@@ -1,14 +1,14 @@
 package com.target
 
 fun main() {
-    val meeting = Meeting()
+    val meeting = Meeting("Review")
 
-    println("Creating: $meeting")
+    println("Creating: $meeting with name${meeting.meetingName}")
 
     val participant = Participant()
     val name = Name()
     name.name = "Katie"
-    name.name = ""
+//    name.name = ""
     participant.name = name
     participant.email = "katie@gmail.com"
 
