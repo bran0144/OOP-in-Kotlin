@@ -6,8 +6,8 @@ fun main() {
     println("Creating: $meeting with name${meeting.meetingName} and at ${meeeting.location}")
 
 
-    val name = Name()
-    name.name = "Katie"
+    val name = Name("Katie")
+
     val participant = Participant(name, "katie@gmail.com")
 //    name.name = ""
 
