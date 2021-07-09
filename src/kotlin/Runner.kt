@@ -1,21 +1,20 @@
 package com.target
 
 fun main() {
-    val meeting = Meeting("Review")
+    val meeting = Meeting("Review", Location("any address"))
 
-    println("Creating: $meeting with name${meeting.meetingName}")
+    println("Creating: $meeting with name${meeting.meetingName} and at ${meeeting.location}")
 
-    val participant = Participant()
+
     val name = Name()
     name.name = "Katie"
+    val participant = Participant(name, "katie@gmail.com")
 //    name.name = ""
-    participant.name = name
-    participant.email = "katie@gmail.com"
 
-    val canonicalEmail = participant.canonicalEmail
+//    val canonicalEmail = participant.canonicalEmail
 
     meeting.addParticipant(participant)
 //    meeting.meetingName = "Review"
 
-    meeting.logger
+//    meeting.logger
 }

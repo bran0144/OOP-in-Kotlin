@@ -1,12 +1,11 @@
 package com.target
 
-class Meeting{
-
-    constructor(meetingName: String) {
-        this.meetingName = meetingName
-    }
+class Meeting{val meetingName: String, val location: Location = Location "")
     internal val logger = Logger()
-    val meetingName: String
+
+
+
+//    val meetingName: String
 
     fun addParticipant(participant: Participant) {
         if verifyParticipant(participant)
@@ -17,4 +16,8 @@ class Meeting{
         return true
     }
     protected fun verifyMeeting(){}
+}
+
+class Location(val address: String){
+
 }

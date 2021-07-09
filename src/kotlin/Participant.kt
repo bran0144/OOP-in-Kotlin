@@ -1,8 +1,6 @@
 package com.target
 
-class Participant {
-    var name: Name = Name
-    var email = ""
+class Participant {val name: Name, val email: String
 
     val participantName
         get() = name.name
