@@ -1,10 +1,10 @@
 package com.target
 
 fun main() {
-    val meeting = Meeting("Review", Location("any address"))
-    val review = PersonalReview("Review Meeting", Participatn(Name("Alice"), ""), listof(), Location("Room 1"))
+    val meeting = Meeting("Review", UKAddress("a house", "a street", "a town", "a county", "a postcode"))
+    val review = PersonalReview("Review Meeting", Participatn(Name("Alice"), ""), listof(), Room("Room 1"))
 
-    println("Creating $review with name ${review.meetingName} at ${review.location}")
+    println("Creating $review with name ${review.meetingName} at ${review.locationName}")
 
     review.closeReview()
 

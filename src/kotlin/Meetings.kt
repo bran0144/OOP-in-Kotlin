@@ -1,7 +1,9 @@
 package com.target
 
-open class Meeting{val meetingName: String, val location: Location = Location "")
+open class Meeting{val meetingName: String, open val location: Location = Location())
     internal val logger = Logger()
+
+    open val locationName = ""
 
 
 
@@ -24,8 +26,11 @@ class Location(val address: String){
 
 }
 
-class PersonalReview(meetingName: String, val employee: Participant, reviewers: List<Participant>, location: Location = location"")
-    : Meeting(meetingName) {
+class PersonalReview(meetingName: String, val employee: Participant, reviewers: List<Participant>, override val location: Room)
+    : Meeting(meetingName, location) {
+
+    override val locationName: String
+        get() = location.roomName
 
         fun closeReview() {
             println("Review ended")
