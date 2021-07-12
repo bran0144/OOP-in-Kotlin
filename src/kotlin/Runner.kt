@@ -6,6 +6,8 @@ fun main() {
 
     println("Creating $review with name ${review.meetingName} at ${review.location}")
 
+    review.closeReview()
+
     val name = Name("Katie")
 
     val participant = Participant(name, "katie@gmail.com")

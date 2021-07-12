@@ -15,7 +15,9 @@ open class Meeting{val meetingName: String, val location: Location = Location ""
         println("try to verify")
         return true
     }
-    protected fun verifyMeeting(){}
+    protected open fun verifyMeeting(){
+        println("Meeting: verify meeting")
+    }
 }
 
 class Location(val address: String){
@@ -25,4 +27,13 @@ class Location(val address: String){
 class PersonalReview(meetingName: String, val employee: Participant, reviewers: List<Participant>, location: Location = location"")
     : Meeting(meetingName) {
 
+        fun closeReview() {
+            println("Review ended")
+            verifyMeeting()
+        }
+    override fun verifyMeeting() {
+        println("Personal review: verify meeting")
+        super.verifyMeeting()
+
+    }
 }
