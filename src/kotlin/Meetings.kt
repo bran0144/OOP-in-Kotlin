@@ -1,6 +1,6 @@
 package com.target
 
-open class Meeting{val meetingName: String, open val location: Location = Location())
+open class Meeting{val meetingName: String, open val location: Location = Location
     internal val logger = Logger()
 
     open val locationName = ""
