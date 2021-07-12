@@ -2,9 +2,9 @@ package com.target
 
 fun main() {
     val meeting = Meeting("Review", Location("any address"))
+    val review = PersonalReview("Review Meeting", Participatn(Name("Alice"), ""), listof(), Location("Room 1"))
 
-    println("Creating: $meeting with name${meeting.meetingName} and at ${meeeting.location}")
-
+    println("Creating $review with name ${review.meetingName} at ${review.location}")
 
     val name = Name("Katie")
 

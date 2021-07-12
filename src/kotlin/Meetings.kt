@@ -1,6 +1,6 @@
 package com.target
 
-class Meeting{val meetingName: String, val location: Location = Location "")
+open class Meeting{val meetingName: String, val location: Location = Location "")
     internal val logger = Logger()
 
 
@@ -19,5 +19,10 @@ class Meeting{val meetingName: String, val location: Location = Location "")
 }
 
 class Location(val address: String){
+
+}
+
+class PersonalReview(meetingName: String, val employee: Participant, reviewers: List<Participant>, location: Location = location"")
+    : Meeting(meetingName) {
 
 }
