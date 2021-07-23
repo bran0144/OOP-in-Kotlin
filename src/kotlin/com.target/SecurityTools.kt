@@ -36,7 +36,7 @@ fun main(args: Array<String>) {
 
         }
         "providers" -> {
-
+            Providers().run()
         }
     }
 }
