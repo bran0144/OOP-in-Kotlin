@@ -19,8 +19,9 @@ fun main(args: Array<String>) {
     }
     ParseArgs.setupDefaultValues(
         arrayOf(ArgumentInitializers("operation", ArgumentType.StringType(), "-op"),
-            (ArgumentInitializers("algorithm", ArgumentType.StringType(), "-a"),
-            (ArgumentInitializers("keystoneType", ArgumentType.StringType(), "-JKS"),
+            ArgumentInitializers("algorithm", ArgumentType.StringType(), "-a"),
+            ArgumentInitializers("keystoneType", ArgumentType.StringType(), "-JKS"),
+            ArgumentInitializers("filter", ArgumentType.StringType(), "-filter")
             )
     )
 
