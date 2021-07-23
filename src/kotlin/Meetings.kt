@@ -1,7 +1,7 @@
 package com.target
 
 open class Meeting{val meetingName: String, open val location: Location = Location
-    internal val logger = Logger()
+    private val logger = FileLogger(Paths.get("/some/file.log"))
 
     open val locationName = ""
 
